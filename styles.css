@@ -9,7 +9,9 @@
     margin: auto;
 }
 body{
-    background-color: beige;
+    background-color: rgb(218, 223, 224);
+    height: 50vw;
+    
 }
 header{
     display:flex;
@@ -17,9 +19,11 @@ header{
     border: none;
     text-align: center;
     padding: 16px;
-    width: 90%;
+    width: 82%;
     margin: auto;
     text-align: center;
+   
+    
 }
 input{
     width: 80%;
@@ -54,7 +58,9 @@ main{
     display: flex;
     flex-flow: row wrap;
     width: 80%;
+    height: 10vh;
     margin: auto;
+    
     
 }
 .item{
@@ -69,19 +75,21 @@ main{
    
 }
 .item-icone{
-    flex: 25%;
+    flex: 10%;
     text-align: center;
     font-size: 20px;
+    cursor: pointer;
 }
 .item-nome{
-    flex: 50%;
+    flex: 80%;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
     
 }
 .item-botao{
-    flex: 25%;
+    flex: 10%;
     text-align: center;
 
     
@@ -97,13 +105,75 @@ main{
 .delete:hover{
     background-color: rgb(221, 44, 44);
 }
-.bi-check-circle-fill{
-    color: green;
-}
+
 .item.clicado{
-    background-color: rgb(185, 240, 185);
+    background-color: rgb(83, 216, 83);
 }
-.item.clicado .item-nome{
+.item.clicado  .item-nome{
     text-decoration: line-through;
-    color: gray;
+    color: rgb(253, 251, 251);
+}
+footer{
+    background-color: rgb(2, 2, 2);
+    padding: 20px;
+    text-align: center;
+    color: white;
+      
+}
+
+
+@media (max-width:767px){
+   h1{
+    font-size: 16px;
+    padding: 10px;
+   }
+   header{
+    width: 90%;
+    
+   }
+   input{
+    width: 70%;
+    height: 30px;
+    font-size: 12px;
+
+   }
+   button{
+    width: 30%;
+    border: none;
+    background-color: rgb(13, 177, 199);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    
+}
+
+.item-nome{
+    flex: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    
+}
+.item-botao{
+    flex: 25%;
+    text-align: center;   
+}
+footer{
+    background-color: rgb(2, 2, 2);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+
+   
+   
+   
+    
 }
